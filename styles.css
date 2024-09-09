@@ -1,0 +1,86 @@
+/* Estilos gerais para o corpo */
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: #0e0f1d; /* Escuro profundo como o espaço */
+    color: #e0e0e0; /* Texto claro para contraste */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Centraliza o conteúdo e aplica padding */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Estilos para os passos */
+.passo {
+    display: none; /* Oculta todas as seções inicialmente */
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para profundidade */
+    margin-bottom: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.passo.ativo {
+    display: block; /* Mostra a seção ativa */
+    opacity: 1;
+}
+
+.passo img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Estilos para os botões */
+.btn-proximo {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #007bff; /* Azul brilhante */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-proximo:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom no hover */
+}
+
+.btn-proximo:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Destaque ao focar */
+}
+
+/* Estilos para os parágrafos */
+p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Estilos para os títulos */
+h1, h2, h3 {
+    color: #ffffff; /* Títulos em branco */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra para destacar os títulos */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .btn-proximo {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+}
